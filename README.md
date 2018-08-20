@@ -10,3 +10,31 @@ Docker 镜像：doudoubing/cundang:latest，doudoubing/cundang:core版本号（f
 
 客户端： android Actinium、windows v2ray 可用同一个服务端。
 
+
+
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbound": {
+    "protocol": "vmess",
+    "port": 8080,
+    "settings": {
+      "clients": [
+        {
+          "id": "6936eeda-f303-4cc6-965b-fea4433938af",
+          "alterId": 64,
+          "security": "chacha20-ploy1305"
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws"
+    }
+  },
+  "inboundDetour": [],
+  "outbound": {
+    "protocol": "freedom",
+   "settings": {}
+  }
+}
